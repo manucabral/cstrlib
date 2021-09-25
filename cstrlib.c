@@ -19,3 +19,8 @@ char cstrget(unsigned char *string, int index)
         return '\0';
     return string[index];
 }
+
+char cstrgetf(unsigned char *string)
+{
+    return string[0];    
+}

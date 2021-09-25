@@ -31,4 +31,12 @@ int cstrlen(unsigned char *string);
  */
 char cstrget(unsigned char *string, int index);
 
+/**
+ * @brief Get the first character of a string.
+ * 
+ * @param string The string.
+ * @return char The first character.
+ */
+char cstrgetf(unsigned char *string);
+
 #endif
