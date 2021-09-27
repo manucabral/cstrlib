@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
     char string[16];
     char second_string[24];
 
-    gets(string);
+    fgets(string, sizeof(string), stdin);
     
     printf("%d\n", cstrempty(string));
     printf("%d\n", cstrlen(string));
