@@ -39,4 +39,22 @@ char cstrget(unsigned char *string, int index);
  */
 char cstrgetf(unsigned char *string);
 
+/**
+ * @brief Compare if two strings are equal.
+ * 
+ * @param alpha First string.
+ * @param beta Second string.
+ * @return int 0 equals, otherwise not equal.
+ */
+int cstrcmp(unsigned char *alpha, unsigned char *beta);
+
+/**
+ * @brief Copy a string to another string.
+ * 
+ * @param string Source string.
+ * @param dest Destination string.
+ * @return char True success, otherwise false.
+ */
+int cstrcpy(unsigned char *string, unsigned char *dest);
+
 #endif

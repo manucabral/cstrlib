@@ -22,5 +22,22 @@ char cstrget(unsigned char *string, int index)
 
 char cstrgetf(unsigned char *string)
 {
-    return string[0];    
+    return string[0];
+}
+
+int cstrcmp(unsigned char *alpha, unsigned char *beta)
+{
+    while (*alpha != '\0' && *beta != '\0' && *alpha == *beta)
+    {
+        alpha++;
+        beta++;
+    }
+    return *alpha - *beta;
+}
+
+int cstrcpy(unsigned char *string, unsigned char *dest)
+{
+    while (*string != '\0')
+        *dest++ = *string++;
+    return cstrcmp(string, dest);
 }
