@@ -20,7 +20,7 @@ int cstrempty(unsigned char *string);
  * @param string The string.
  * @return int The length of the string.
  */
-int cstrlen(unsigned char *string);
+size_t cstrlen(unsigned char *string);
 
 /**
  * @brief Get a character from a specific position in a string.
@@ -56,5 +56,14 @@ int cstrcmp(unsigned char *alpha, unsigned char *beta);
  * @return char True success, otherwise false.
  */
 int cstrcpy(unsigned char *string, unsigned char *dest);
+
+/**
+ * @brief Appends a string to another string.
+ *
+ * @param dest Destination string.
+ * @param string String to be appended.
+ * @return char Destination string with the string appended.
+ */
+char *cstradd(unsigned char *dest, unsigned char *string);
 
 #endif

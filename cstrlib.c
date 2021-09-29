@@ -5,7 +5,7 @@ int cstrempty(unsigned char *string)
     return string[0] == '\0';
 }
 
-int cstrlen(unsigned char *string)
+size_t cstrlen(unsigned char *string)
 {
     int count = 0;
     while (*string++ != '\0')
@@ -40,4 +40,13 @@ int cstrcpy(unsigned char *string, unsigned char *dest)
     while (*string != '\0')
         *dest++ = *string++;
     return cstrcmp(string, dest);
+}
+
+char *cstradd(unsigned char *dest, unsigned char *string)
+{
+    char *aux = dest;
+    while (*++aux);
+    --aux;
+    while (*aux++ = *string++);
+    return dest;
 }

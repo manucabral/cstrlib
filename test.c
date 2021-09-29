@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 
     if(cstrcmp(string, second_string) == 0)
         puts("Equals");
-    else
-        puts("Not equals");
+
+    puts(cstradd(string, "todo bien?"));
     
     return 0;
 }
