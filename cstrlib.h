@@ -18,7 +18,7 @@ int cstrempty(unsigned char *string);
  * @brief Get the length of a string.
  * 
  * @param string The string.
- * @return int The length of the string.
+ * @return size_t The length of the string.
  */
 size_t cstrlen(unsigned char *string);
 
