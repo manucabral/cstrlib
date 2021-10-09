@@ -1,4 +1,4 @@
-#include "cstrlib.h"
+#include "lib/cstrlib.h"
 
 int main(int argc, char *argv[])
 {

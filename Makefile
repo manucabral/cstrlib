@@ -2,8 +2,8 @@ CC = gcc
 
 all: build
 
-build: test.c
-	$(CC) test.c cstrlib.c -o test
+build: global_test.c
+	$(CC) global_test.c lib/cstrlib.c -o global_test
 
-run: test
-	./test
+run: global_test
+	./global_test
