@@ -1,11 +1,11 @@
 #include "cstrlib.h"
 
-int cstrempty(unsigned char *string)
+int cstrempty(UC *string)
 {
     return string[0] == '\0';
 }
 
-size_t cstrlen(unsigned char *string)
+size_t cstrlen(UC *string)
 {
     int count = 0;
     while (*string++ != '\0')
@@ -13,19 +13,19 @@ size_t cstrlen(unsigned char *string)
     return count;
 }
 
-char cstrget(unsigned char *string, int index)
+char cstrget(UC *string, int index)
 {
     if (index < 0 || index >= cstrlen(string))
         return '\0';
     return string[index];
 }
 
-char cstrgetf(unsigned char *string)
+char cstrgetf(UC *string)
 {
     return string[0];
 }
 
-int cstrcmp(unsigned char *alpha, unsigned char *beta)
+int cstrcmp(UC *alpha, UC *beta)
 {
     while (*alpha != '\0' && *beta != '\0' && *alpha == *beta)
     {
@@ -35,14 +35,14 @@ int cstrcmp(unsigned char *alpha, unsigned char *beta)
     return *alpha - *beta;
 }
 
-int cstrcpy(unsigned char *string, unsigned char *dest)
+int cstrcpy(UC *string, UC *dest)
 {
     while (*string != '\0')
         *dest++ = *string++;
     return cstrcmp(string, dest);
 }
 
-char *cstradd(unsigned char *dest, unsigned char *string)
+char *cstradd(UC *dest, UC *string)
 {
     char *aux = dest;
     while (*++aux);
@@ -50,3 +50,12 @@ char *cstradd(unsigned char *dest, unsigned char *string)
     while (*aux++ = *string++);
     return dest;
 }
+
+void cstrcr(UC *source, CC search, CC replace)
+{
+    while(*source++ != '\0')
+    {
+        if(*source == search)
+            *source = replace;
+    }
+};
