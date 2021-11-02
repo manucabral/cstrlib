@@ -9,3 +9,4 @@ A simple string library for C.
 - `cstrcmp` - Compare if two strings are equals, example [here](https://github.com/manucabral/cstrlib/blob/main/test/compare_test.c).
 - `cstrcpy` - Copy a string to another string, example [here](https://github.com/manucabral/cstrlib/blob/main/test/copy_test.c).
 - `cstrempty` - Checks if a string is empty, example [here](https://github.com/manucabral/cstrlib/blob/main/test/empty_test.c).
+- `cstrcr` - Replaces a char for another char, example [here](https://github.com/manucabral/cstrlib/blob/main/test/charreplace_test.c).
