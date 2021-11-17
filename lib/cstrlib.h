@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef CSTRLIB_INCLUDED
 #define CSTRLIB_INCLUDED
 
